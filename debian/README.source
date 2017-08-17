@@ -1,0 +1,13 @@
+vault for Debian
+----------------
+
+vault was downloaded from:
+
+    https://www.vaultproject.io/downloads.html
+
+TODO
+----
+* logrotate
+* ulimit -c 0
+
+ -- Michael Weber <mweber@instartlogic.com>, Wed, 16 Aug 2017 23:41:29 -0700

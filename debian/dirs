@@ -1,0 +1,4 @@
+etc/vault/conf.d
+usr/bin
+var/lib/vault/data
+var/log/vault

@@ -1,0 +1,22 @@
+Source: vault
+Section: misc
+Priority: extra
+Maintainer: Michael Weber <mweber@instartlogic.com>
+Build-Depends: debhelper (>= 9.0.0), 
+ awk, 
+ wget,
+ unzip,
+ libcap2-bin,
+ ca-certificates
+Standards-Version: 3.9.2
+Homepage: https://www.vaultproject.io/
+
+Package: vault
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: tool for managing secrets
+ Vault is a tool for securely accessing secrets. A secret is anything
+ that you want to tightly control access to, such as API keys,
+ passwords, certificates, and more. Vault provides a unified interface
+ to any secret, while providing tight access control and recording a
+ detailed audit log.

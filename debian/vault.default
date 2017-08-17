@@ -1,0 +1,4 @@
+# Vault defaults
+#
+# GOMAXPROCS=`nprocs`
+# VAULT_FLAGS=
