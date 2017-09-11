@@ -1,5 +1,5 @@
 # NOTE: just for testing, this gets overridden by debuild
-BASEVERSION := 0.8.1
+BASEVERSION ?= 0.8.1
 ARCHIVE := vault_$(BASEVERSION)_linux_amd64.zip
 URL := https://releases.hashicorp.com/vault/$(BASEVERSION)/$(ARCHIVE)
 
@@ -9,7 +9,7 @@ download: $(ARCHIVE) CHANGELOG.md
 
 install: download
 	install --mode 0755 vault $(DESTDIR)/usr/bin/
-	install --mode 0644 server.hcl $(DESTDIR)/etc/vault.d
+	install --mode 0644 server.hcl $(DESTDIR)/etc/vault/conf.d
 
 clean:
 	$(RM) $(ARCHIVE) vault CHANGELOG.md
