@@ -1,3 +1,11 @@
+vault (0.9.0-1) xenial; urgency=low
+
+  * New upstream version
+  * updated /var/lib/vault permissions to allow CA cert to be read
+    (it's not secret)
+
+ -- Michael Weber <mweber@instartlogic.com>  Tue, 28 Nov 2017 21:16:34 -0800
+
 vault (0.8.2-1) precise; urgency=low
 
   * New upstream version

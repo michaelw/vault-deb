@@ -1,5 +1,5 @@
 #!/bin/sh
-# postinst script for samplicator
+# postinst script for vault
 #
 # see: dh_installdeb(1)
 
@@ -33,7 +33,8 @@ case "$1" in
 
         if ! dpkg-statoverride --list $PKG_HOME >/dev/null; then
             chown $PKG_USER:$PKG_GROUP $PKG_HOME
-            chmod u=rwx,g=rx,o= $PKG_HOME
+            chmod u=rwx,g=rx,o=rx $PKG_HOME
+            chmod u=rwx,g=rx,o= $PKG_HOME/data
         fi
 
         if ! dpkg-statoverride --list $PKG_LOG >/dev/null; then
