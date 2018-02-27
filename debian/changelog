@@ -1,3 +1,11 @@
+vault (0.9.4-1) xenial; urgency=low
+
+  * New upstream version
+    SHA256:b312dfe783f69f5284d350714468f005dbb023f26ac9525d267550fb3dd2eea5
+  * added checksum checking
+
+ -- Michael Weber <mweber@instartlogic.com>  Mon, 26 Feb 2018 22:55:27 -0800
+
 vault (0.9.0-1) xenial; urgency=low
 
   * New upstream version

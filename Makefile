@@ -1,5 +1,6 @@
 # NOTE: just for testing, this gets overridden by debuild
 BASEVERSION ?= 0.8.1
+CHECKSUM := $(shell dpkg-parsechangelog | sed -ne 's/.*SHA256://p')
 ARCHIVE := vault_$(BASEVERSION)_linux_amd64.zip
 URL := https://releases.hashicorp.com/vault/$(BASEVERSION)/$(ARCHIVE)
 
@@ -18,6 +19,7 @@ test: vault
 	./vault -v
 
 vault: $(ARCHIVE)
+	echo '$(CHECKSUM)  $(ARCHIVE)' | sha256sum -c
 	unzip $(ARCHIVE)
 
 $(ARCHIVE):
