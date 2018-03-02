@@ -1,3 +1,10 @@
+vault (0.9.5-1) precise; urgency=low
+
+  * New upstream version
+    SHA256:f6dbc9fdac00598d2a319c9b744b85bf17d9530298f93d29ef2065bc751df099
+
+ -- Michael Weber <mweber@instartlogic.com>  Thu, 01 Mar 2018 23:15:22 -0800
+
 vault (0.9.4-1) xenial; urgency=low
 
   * New upstream version
